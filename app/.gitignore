@@ -1,2 +1,4 @@
 platforms/
 bower_components/
+www/js/pixi.js
+www/js/pixi.min.js

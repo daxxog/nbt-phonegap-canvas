@@ -13,6 +13,10 @@ app:
 
 bower:
 	bower install
+	$(MAKE) bower-cp
+
+bower-cp:
+	cp bower_components/pixi.js/bin/*.js www/js
 
 platforms:
 	cordova platform add ios	
