@@ -9,6 +9,7 @@
   "main": "config.xml",
   "license": "APACHE 2.0",
   "dependencies": {
-    "pixi.js": "~3.0.6"
+    "pixi.js": "~3.0.6",
+    "jquery": "~2.1.4"
   }
 }

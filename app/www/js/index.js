@@ -21,12 +21,13 @@ var app = {
     initialize: function() {
         this.bindEvents();
 
-        var renderer = PIXI.autoDetectRenderer(300, 600);
+        var renderer = PIXI.autoDetectRenderer($(window).width(), $(window).height());
         document.body.appendChild(renderer.view);
 
         var stage = new PIXI.Container();
         var logoTexture = PIXI.Texture.fromImage('./img/logo.png');
         var logo = new PIXI.Sprite(logoTexture);
+        var text = new PIXI.Text('w:' + $(window).width() + '\nh:' + $(window).height(), {fill: "white"});
 
         logo.position.x = 400;
         logo.position.y = 300;
@@ -35,6 +36,11 @@ var app = {
         logo.scale.y = 2;
 
         stage.addChild(logo);
+
+        text.position.x = 20;
+        text.position.y = 20;
+
+        stage.addChild(text);
 
         animate();
 

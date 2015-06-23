@@ -2,3 +2,5 @@ platforms/
 bower_components/
 www/js/pixi.js
 www/js/pixi.min.js
+www/js/jquery.js
+www/js/jquery.min.js

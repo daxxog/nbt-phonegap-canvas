@@ -17,10 +17,10 @@ bower:
 
 bower-cp:
 	cp bower_components/pixi.js/bin/*.js www/js
+	cp bower_components/jquery/dist/*.js www/js
 
 platforms:
 	cordova platform add ios	
-	cordova platform add browser
 
 cordova-build:
 	cordova build
