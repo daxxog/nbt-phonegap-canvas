@@ -20,6 +20,7 @@ bower-cp:
 
 platforms:
 	cordova platform add ios	
+	cordova platform add browser
 
 cordova-build:
 	cordova build
