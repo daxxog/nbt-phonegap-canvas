@@ -1,0 +1,14 @@
+{
+  "name": "app",
+  "version": "0.0.1",
+  "homepage": "https://github.com/daxxog/nbt-phonegap-canvas",
+  "authors": [
+    "David Volm <david@volminator.com>"
+  ],
+  "description": "description",
+  "main": "config.xml",
+  "license": "APACHE 2.0",
+  "dependencies": {
+    "pixi.js": "~3.0.6"
+  }
+}

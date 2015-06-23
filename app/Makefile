@@ -1,8 +1,18 @@
 .PHONY: app platforms cordova-build
 
 app:
-	$(MAKE) platforms
+	if [ ! -d bower_components ] ; \
+	then \
+		$(MAKE) bower ; \
+	fi;
+	if [ ! -d platforms ] ; \
+	then \
+		$(MAKE) platforms ; \
+	fi;
 	$(MAKE) cordova-build
+
+bower:
+	bower install
 
 platforms:
 	rm -r platforms/*
