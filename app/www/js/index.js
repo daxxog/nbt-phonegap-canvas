@@ -20,11 +20,29 @@ var app = {
     // Application Constructor
     initialize: function() {
         this.bindEvents();
-        var renderer = PIXI.autoDetectRenderer(800, 600);
+
+        var renderer = PIXI.autoDetectRenderer(300, 600);
         document.body.appendChild(renderer.view);
+
         var stage = new PIXI.Container();
         var logoTexture = PIXI.Texture.fromImage('./img/logo.png');
         var logo = new PIXI.Sprite(logoTexture);
+
+        logo.position.x = 400;
+        logo.position.y = 300;
+
+        logo.scale.x = 2;
+        logo.scale.y = 2;
+
+        stage.addChild(logo);
+
+        animate();
+
+        function animate() {
+            requestAnimationFrame(animate);
+            logo.rotation += 0.01;
+            renderer.render(stage);
+        }
     },
     // Bind Event Listeners
     //
