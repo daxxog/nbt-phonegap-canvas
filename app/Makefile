@@ -6,7 +6,7 @@ app:
 
 platforms:
 	rm -r platforms/*
-	cordova platform add ios &> /dev/null	
+	cordova platform add ios	
 
 cordova-build:
 	cordova build
