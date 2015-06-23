@@ -1,4 +1,4 @@
-.PHONY: app platforms cordova-build
+.PHONY: app bower platforms cordova-build
 
 app:
 	if [ ! -d bower_components ] ; \
