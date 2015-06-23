@@ -15,7 +15,6 @@ bower:
 	bower install
 
 platforms:
-	rm -r platforms/*
 	cordova platform add ios	
 
 cordova-build:
